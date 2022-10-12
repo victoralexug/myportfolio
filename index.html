@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,19 +7,32 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="portfolio.css">
 </head>
-<body>
-    <nav id="navbar" class="nav">
+<body>  
+    <nav>
+      <div class="navbar-brand">
+        <span>Victor Eze</span>
+      </div>
+      <div class="navbar-link">
         <ul class="nav-link">
-            <a href="#welcome-section">About</a>
-            <a href="#projects">Work</a>
-            <a href="#contacts">Contact</a>
-        </ul> 
-      </nav>
+          <a href="#welcome-section">About</a>
+          <a href="#projects">Work</a>
+          <a href="#contacts">Contact</a>
+        </ul>
+      </div> 
+    </nav>
       
         <section id='welcome-section'>
-           <img id='image' src='https://1.bp.blogspot.com/-jRnYm8s0jHk/YRGd2wku6wI/AAAAAAAADf0/Exrm1g1uM4kuwXQx6FhRUTVdh9_9ogMOQCNcBGAsYHQ/s1686/IMG_0014.JPG' alt=" victor eze's tribute image">
-          <h1>Hi, I am Victor Eze</h1>
-          <i>a web developer</i> 
+          <!-- particles.js container --> 
+          <div id="particles-js"></div>
+          <div id='image'>
+            <img src='https://1.bp.blogspot.com/-jRnYm8s0jHk/YRGd2wku6wI/AAAAAAAADf0/Exrm1g1uM4kuwXQx6FhRUTVdh9_9ogMOQCNcBGAsYHQ/s1686/IMG_0014.JPG' alt=" victor eze's tribute image">
+          </div>
+          <div>
+            <h1>Hi There! <br>
+               I'm Victor Eze</h1>
+            <i class="typewrite" data-period="2000" data-type='[ "Web developer", "React engineer", "Wordpress expert", "Website designer"]'>
+            </i>
+          </div>
         </section> 
         
         <section id='projects'>
@@ -45,47 +57,51 @@
                Email Signature
                 <span class="code">&#47;&gt;</spa></p>
             </a>
-             <a href='https://victoralexug.github.io/my-contacts/' target='_blank'  class="project project-tile">
+            <a href='https://victoralexug.github.io/my-contacts/' target='_blank'  class="project project-tile">
               <img class='project-image' src='contactlist.JPG' alt='project'/>
               <p class='project-title'><span class="code">&lt;</span>
               Contact List
                 <span class="code">&#47;&gt;</spa></p>
             </a>
-             <a href='https://codepen.io/victoralexug/full/NWjeboo' target='_blank'  class="project project-tile">
+            <a href='https://codepen.io/victoralexug/full/NWjeboo' target='_blank'  class="project project-tile">
               <img class='project-image' src='https://1.bp.blogspot.com/-jg2Zq_3TUoQ/YRdW3e8HASI/AAAAAAAADg8/Zkpis9oNunULZAFLh-ivWqpo_axmCP84gCNcBGAsYHQ/s851/2689F0F9-8034-4B7D-9A3C-CD9C4605D02B.jpeg' alt='project'/>
               <p class='project-title'><span class="code">&lt;</span>
               Simple Image Gallary
                 <span class="code">&#47;&gt;</spa></p>
             </a>
-             <a href='https://www.vezedigitals.com/' target='_blank'  class="project project-tile">
+            <a href='https://www.vezedigitals.com/' target='_blank'  class="project project-tile">
               <img class='project-image' src='https://1.bp.blogspot.com/-HMTpSdr8hEY/YRdW3tBWesI/AAAAAAAADhA/SWWSyo1gXxAlw1SDcOt_-KMcDt7AHb63wCNcBGAsYHQ/s749/846AEBD7-CC36-4C6B-BEFC-B7BD439570AA.jpeg' alt='project'/>
               <p class='project-title'><span class="code">&lt;</span>
               Vezedigitals
-                <span class="code">&#47;&gt;</spa></p>
+                <span class="code">&#47;&gt;</span></p>
             </a>
        </div>
           
-          <a id='profile-link' href='https://codepen.io/victoralexug' target='_blank'>Show all ></a>
+          <a id='profile-link' href='https://github.com/victoralexug' target='_blank'>Show all ></a>
         </section>
       
       <section id='contacts'>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      
-        <h2 id='contact-header'>Lets work together...</h2>
-          <p id='contact-p'>contact links</p>
-        
-        <div id='social'>
-        <a href="https://facebook.com/pg/victoralexug" target='_blank' class="fa fa-facebook">Facebook</a>
-        <a href="https://twitter.com/victoralexug" target='_blank' class="fa fa-twitter">Twitter</a>
-        <a href="https://github.com/victoralexug" target='_blank' class="fa a-github">GitHub</a>
-          <a href="mailto:victoralexu@gmail.com" target='_blank' class="fa fa-envelope">Send a mail</a>
-          <a href="tel:)9050819612" target='_blank' class="fa fa-phone">Call me</a>
+          <div>
+            <h2 id='contact-header'>Lets work together...</h2>
+            <p id='contact-p'>contact links</p>
+          </div>
+          <div id='social'>
+            <a href="https://facebook.com/pg/victoralexug" target='_blank' class="fa fa-facebook">Facebook</a>
+            <a href="https://twitter.com/victoralexug" target='_blank' class="fa fa-twitter">Twitter</a>
+            <a href="https://github.com/victoralexug" target='_blank' class="fa a-github">GitHub</a>
+            <a href="mailto:victoralexu@gmail.com" target='_blank' class="fa fa-envelope">Send a mail</a>
+            <a href="tel:)9050819612" target='_blank' class="fa fa-phone">Call me</a>
           </div>
       </section>
       
       <footer id='footer'>
-        <p>&copy; by <a id='footer-link' href="https://web.facebook.com/pg/victoralexug/about/?ref=page_internal" target='blank'>Victor Eze</a></p>
-          
-        </footer>
+        <p>Designed and Developed by Victor Eze</p>
+        <p>Copyright &copy; 2022 <a id='footer-link' href="https://github.com/victoralexug" target='blank'>Victor</a></p>    
+      </footer>
+
+         <!-- particles.js lib - https://github.com/VincentGarreau/particles.js --> 
+      <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+      <script src="portfolio.js"></script>
 </body>
 </html>
